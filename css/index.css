@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Bold\ Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Light\ Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Medium\ Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircular';
+    src: url('../assets/font/Euclid\ Circular\ A\ SemiBold\ Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFontPoppins);
+}
+
+main {
+    background-color: #fafafa;
+}
+
+dl, ol, ul, li {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0 !important;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --mainColor: #05112b;
+    --skyColor: #43efff;
+    --pastelRedColor: #de5252;
+    --blackColor: #000;
+    --whiteColor: #fff;
+    --mainFontPoppins: 'EuclidCircular', sans-serif;
+    --borderRadiusBtn: 50px;
+    --borderRadius7Btn: 7px;
+    --color-white-100: hsl(0, 0%, 100%);
+    --text-medium: clamp(1.18rem, calc(0.17vw + 1.14rem), 1.26rem);
+    --text-large: clamp(1.32rem, calc(0.19vw + 1.28rem), 1.41rem);
+    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.section_Title {
+    width: 100%;
+    margin-bottom: 50px;
+
+    p {
+        position: relative;
+        padding-left: 70px;
+        margin-bottom: 0 !important;
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+        color: #fff;
+    }
+
+    p::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: var(--skyColor);
+        top: 50%;
+        left: 0;
+    }
+
+    small {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+/* Header */
+
+
+header {
+    background-color: var(--mainColor);
+    padding: 10px 0;
+
+    .herder_Nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+
+        nav {
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+                padding: 0 2rem;
+                list-style: none;
+
+                li {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--blackColor);
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+
+                    a {
+                        color: #fff;
+                        padding: 10px;
+                        transition: 0.3s ease-in-out;
+                    
+                        &:hover {
+                            border: 1px solid var(--skyColor);
+                            padding: 10px;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Banner */
+
+.banner {
+    min-height: 100vh;
+    background-color: var(--mainColor);
+    padding: 2rem 0;
+    color: #fff;
+    position: relative;
+
+    .banner_Text {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        transform: translate(5%, -50%);
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin: 2rem 0 !important;
+        width: 90%;
+    }
+
+    small {
+        font-size: .9rem;
+        font-weight: 400;
+        color: var(--skyColor);
+        text-transform: uppercase;
+    }
+
+        a {
+            color: #fff;
+            padding: 20px;
+            border: 1px solid var(--skyColor);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            margin-top: 2rem;
+
+            &:hover {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .banner_Image {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate( 0, -50%);
+
+            img {
+                width: 600px;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    /* our_Services */
+
+    .our_Services {
+        padding: 50px 0;
+        background-color: #000; 
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem !important;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .our_Services_Cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .our_Services_Card {
+                position: relative;
+                box-shadow: var(--shadow-small);
+                padding: 2rem;
+                text-align: left;
+                border-bottom: 2px solid #fff;
+                flex-grow: 1;
+                flex-basis: 200px;
+                cursor: pointer;
+                background-color: var(--mainColor);
+                color: #fff;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem !important;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 0rem !important;
+                }
+            }
+        }
+
+        .our_Services_Card:hover {
+            box-shadow: var(--shadow-large);
+            transition: all 0.3s ease-in-out;
+            background-color: var(--skyColor);
+            color: var(--mainColor);
+        }
+    }
+
+
+    /* cybersecurity */
+
+    .cybersecurity {
+        padding: 50px 0;
+        background-color: var(--mainColor);
+        color: #fff;
+
+        .cybersecurity_Title_Image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem !important;
+            color: var(--skyColor);
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0 !important;
+            color: rgb(175, 175, 175)
+        }
+
+        .cybersecurity_Image img {
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
