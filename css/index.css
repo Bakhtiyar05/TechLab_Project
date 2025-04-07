@@ -343,3 +343,18 @@ header {
             object-fit: cover;
         }
     }
+
+@media screen and ( max-width: 768px ) {
+
+    .cybersecurity {
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem !important;
+            color: var(--skyColor);
+        }
+    }
+
+    
+}
