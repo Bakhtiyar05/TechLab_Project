@@ -388,7 +388,13 @@ nav {
 
 @media screen and ( max-width: 768px ) {
 
-    
+    .banner {
+        min-height: 45vh;
+        background-color: var(--mainColor);
+        padding: 2rem 0;
+        color: #fff;
+        position: relative;
+    }
 
     .cybersecurity {
 
