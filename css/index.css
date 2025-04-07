@@ -148,7 +148,7 @@ p {
 /* Header */
 
 
-header {
+/* header {
     background-color: var(--mainColor);
     padding: 10px 0;
 
@@ -190,7 +190,49 @@ header {
             }
         }
     }
+} */
+
+nav {
+    background-color: var(--mainColor) !important;
+
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        outline: none !important;
+    }
+
+    .navbar-brand {
+        color: #fff !important;
+    }
+
+    .navbar-toggler {
+        background-color: none !important;
+
+        img {
+            width: 50px !important;
+        }
+    }
+
+    .navbar-nav li a {
+        color: #fff !important;
+    }
+
+    .nav-item:hover {
+        border-bottom: 1px solid var(--skyColor);
+    }
 }
+
+.navbar-expand-lg .navbar-nav {
+    gap: 40px !important;
+    padding: 0 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+
 
 
 
@@ -345,6 +387,8 @@ header {
     }
 
 @media screen and ( max-width: 768px ) {
+
+    
 
     .cybersecurity {
 
