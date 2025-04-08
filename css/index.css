@@ -471,6 +471,18 @@ nav {
         }
     }
 
+
+@media screen and ( max-width: 480px ) {
+
+    .banner {
+        min-height: 55vh !important;
+        background-color: var(--mainColor);
+        padding: 2rem 0;
+        color: #fff;
+        position: relative;
+    }
+}
+
 @media screen and ( max-width: 768px ) {
 
     .banner {
@@ -481,14 +493,28 @@ nav {
         position: relative;
     }
 
+    .our_Partners_Cards {
+        justify-content: center !important;
+    }
+
     .cybersecurity {
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem !important;
-            color: var(--skyColor);
+        .cybersecurity_Title_Image {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+
+            img {
+                width: 35vw;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
         }
+
+
     }
 
     .footer_Lists {
