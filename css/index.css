@@ -119,6 +119,22 @@ html {
     scroll-behavior: smooth;
 }
 
+.page-enter {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.page-enter-active {
+    animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .section_Title {
     width: 100%;
     margin-bottom: 50px;
@@ -475,7 +491,7 @@ nav {
     }
 
     .footer {
-        padding: 50px 0;
+        padding: 50px 0 16px 0;
         background-color: var(--mainColor);
 
         .footer_Lists {
@@ -528,6 +544,14 @@ nav {
                     width: 150px;
                 }
             }
+        }
+
+        hr {
+            background-color: var(--skyColor);
+        }
+
+        small {
+            color: #fff;
         }
     }
 
@@ -641,19 +665,4 @@ nav {
 
 
 
-.page-enter {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  
-  .page-enter-active {
-    animation: slideUp 0.5s forwards;
-  }
-  
-  @keyframes slideUp {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+

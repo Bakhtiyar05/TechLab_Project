@@ -1,23 +1,22 @@
-  document.querySelectorAll('.nav-link').forEach(link => {
+document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const href = this.getAttribute('href');
-      document.body.classList.add('page-enter');
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        document.body.classList.add('page-enter');
 
-      setTimeout(() => {
-        document.body.classList.add('page-enter-active');
-      }, 10); // class geçişi başlasın
+        setTimeout(() => {
+            document.body.classList.add('page-enter-active');
+        }, 10);
 
-      setTimeout(() => {
-        window.location.href = href;
-      }, 500); // animasiya tamamlandıqdan sonra yönləndir
+        setTimeout(() => {
+            window.location.href = href;
+        }, 500);
+        });
     });
-  });
 
-  // Yeni səhifədə animasiya göstərmək üçün
-  window.addEventListener('load', () => {
-    document.body.classList.add('page-enter');
-    setTimeout(() => {
-      document.body.classList.add('page-enter-active');
-    }, 10);
-  });
+    window.addEventListener('load', () => {
+        document.body.classList.add('page-enter');
+        setTimeout(() => {
+        document.body.classList.add('page-enter-active');
+        }, 10);
+    });
