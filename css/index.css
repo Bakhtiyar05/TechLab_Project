@@ -268,10 +268,10 @@ nav {
 .banner {
     min-height: 100vh;
     background-color: var(--mainColor);
-    padding: 2rem 0;
+    padding: 50rem 0 2rem 0 !important;
     color: #fff;
     position: relative;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 
     .banner_Text {
         position: absolute;
@@ -636,3 +636,24 @@ nav {
         margin-bottom: 50px;
     }
 }
+
+
+
+
+
+.page-enter {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  
+  .page-enter-active {
+    animation: slideUp 0.5s forwards;
+  }
+  
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
