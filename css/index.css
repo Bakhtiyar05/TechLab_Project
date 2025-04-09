@@ -268,7 +268,7 @@ nav {
 .banner {
     min-height: 100vh;
     background-color: var(--mainColor);
-    padding: 50rem 0 2rem 0 !important;
+    padding-top: 40rem !important;
     color: #fff;
     position: relative;
     /* margin-top: 55px; */
