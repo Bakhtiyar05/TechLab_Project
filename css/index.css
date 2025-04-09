@@ -224,10 +224,28 @@ nav {
     .navbar-nav li a {
         color: #fff !important;
     }
+}
 
-    .nav-item:hover {
-        border-bottom: 1px solid var(--skyColor);
-    }
+.navbar-nav .nav-item {
+    position: relative;
+    /* display: inline-block; */
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--skyColor);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover::after {
+    width: 100%;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -361,6 +379,14 @@ nav {
             transition: all 0.3s ease-in-out;
             background-color: var(--skyColor);
             color: var(--mainColor);
+        }
+
+        .our_Services_Card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .our_Services_Card:hover {
+            transform: translateY(-10px);
         }
     }
 
