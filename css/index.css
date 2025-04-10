@@ -768,7 +768,7 @@ nav {
         }
     }
 
-@media screen and ( min-width: 1200px ) {
+@media screen and ( min-width: 1300px ) {
 
     .banner {
         min-height: 90vh;
@@ -778,7 +778,63 @@ nav {
         position: relative;
     }
 
-    
+    .our_Services {
+
+        .section_Title {
+            
+            p {
+                font-size: 3rem !important;
+            }
+            
+            small {
+                font-size: 1.5rem !important;
+            }
+        }
+        
+        .our_Services_Card {
+            flex-basis: 400px !important;
+
+            h3 {
+                font-size: 2rem !important;
+            }
+
+            p {
+                font-size: 1.2rem !important;
+            }
+
+        }
+    }
+
+    .cybersecurity {
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        img {
+            width: 20vw !important;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .our_Partners {
+
+        .section_Title {
+            
+            p {
+                font-size: 3rem !important;
+            }
+            
+            small {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
 }
 
 
@@ -788,7 +844,7 @@ nav {
     .banner {
         min-height: 55vh !important;
         background-color: var(--mainColor);
-        padding: 2rem 0;
+        padding: 10rem 0 !important;
         color: #fff;
         position: relative;
     }
