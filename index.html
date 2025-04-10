@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <link rel="shortcut icon" href="./assets/icons/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,18 +33,15 @@
             </nav>
         </div>
     </header> -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="./assets/icons/techlabLogo.png" alt="">
+            <h3>TECHLAB</h3>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <img src="./assets/icons/menu.svg" alt="">
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Services</a>
                 </li>
@@ -54,16 +52,156 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <h3>TECHLAB</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/icons/menu.svg" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown bigMenu-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">
+                        Services
+                    </a>
+                    <div class="dropdown-menu bigMenu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">Cloud Security</a>
+                        <a class="dropdown-item" href="#">Web Development</a>
+                        <a class="dropdown-item" href="#">Mobile Development</a>
+                        <a class="dropdown-item" href="#">Digital Marketing</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <nav class="navbar-Menu">
+        <div class="navbar-menu-inner">
+            <a href="index.html" class="brand">TECHLAB</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </div>
+        <div class="navbar-menu-block" id="menu">
+            <ul class="menu">
+                <li class="menu-itemm dropdownn">
+                    <span class="dropdownn-toggle menu-link">
+                        Services <i class="bx bx-chevron-down"></i>
+                    </span>
+                    <div class="dropdownn-content">
+                        <div class="dropdownn-column">
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><i class="bx bx-code"></i></span>
+                                    <span class="text-base font-medium">Web Development</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Web Development Bootcamp</a></li>
+                                    <li><a href="#" class="dropdownn-link">HTML and CSS for Beginner</a></li>
+                                    <li><a href="#" class="dropdownn-link">Complete Modern JavaScript</a></li>
+                                    <li><a href="#" class="dropdownn-link">Complete React with Redux</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><i class="bx bx-devices"></i></span>
+                                    <span class="text-base font-medium">Web Design</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Web Design Bootcamp</a></li>
+                                    <li><a href="#" class="dropdownn-link">Responsive Web Design</a></li>
+                                    <li><a href="#" class="dropdownn-link">Figma for Web Designer</a></li>
+                                    <li><a href="#" class="dropdownn-link">Webflow for Beginners</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><i class="bx bx-bookmark"></i></span>
+                                    <span class="text-base font-medium">Certification</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Free Certificates</a></li>
+                                    <li><a href="#" class="dropdownn-link">Courses Certificates</a></li>
+                                    <li><a href="#" class="dropdownn-link">Premium Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="menu-itemm dropdownn">
+                <span class="dropdownn-toggle menu-link">
+                    Discover <i class="bx bx-chevron-down"></i>
+                </span>
+                <div class="dropdownn-content">
+                    <div class="dropdownn-column">
+                    <div class="dropdownn-group">
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-podcast"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Podcasts</a>
+                            <p class="text-base font-normal">
+                            Hear and enjoy our inspiration podcast together with us.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-video"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Tutorials</a>
+                            <p class="text-base font-normal">
+                            Learn video tutorial with our professional instructors.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdownn-group">
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-book-open"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Help Center</a>
+                            <p class="text-base font-normal">
+                            Discover how to register, install and use our products.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-bookmark"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Community</a>
+                            <p class="text-base font-normal">
+                            Share and connect with other user in our communities.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </li> -->
+                <li class="menu-itemm"><a href="#" class="menu-link">About</a></li>
+                <li class="menu-itemm"><a href="#" class="menu-link">Contact</a></li>
+                <li class="menu-itemm"><a href="#" class="menu-link">Support</a></li>
+            </ul>
+            </div>
+        </nav>
 
-    
+        
     <main>
 
         <section class="banner">
@@ -150,54 +288,54 @@
                         </a>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/EkomConstruction-logo.jpg" alt="Ekom Construction">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card" style="background-color: #fff;">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/ericsson-logo.png" alt="Ericsson">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/komiforest-logo.jpg" alt="Komiforest">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/logo_Abacus.png" alt="Abacus">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
-                            <img style="max-height: 100px;" src="./assets/logos/macron-logo.jpg" alt="Macron Group">
-                        </a>
+                        <div href="">
+                            <img style="width: 300px !important;" src="./assets/logos/macron-logo.jpg" alt="Macron Group">
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/MinistryofCulture.svg" alt="Ministry of Culture">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/ness-co.jpeg" alt="Ness-Co">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/officemart-logo.svg" alt="Officemart">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
+                        <div href="">
                             <img src="./assets/logos/villaOho-logo.png" alt="Villa Oho">
-                        </a>
+                        </div>
                     </div>
                     <div class="our_Partners_Card">
-                        <a href="">
-                            <img src="./assets/logos/yasamPark-logo.png" alt="YasamPark">
-                        </a>
+                        <div href="">
+                            <img src="./assets/logos/yasamPark-logo.jpg" alt="YasamPark">
+                        </div>
                     </div>
                 </div>
             </div>
