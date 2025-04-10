@@ -102,9 +102,6 @@ p {
 :root {
     --mainColor: #05112b;
     --skyColor: #43efff;
-    --pastelRedColor: #de5252;
-    --blackColor: #000;
-    --whiteColor: #fff;
     --mainFontPoppins: 'EuclidCircular', sans-serif;
     --borderRadiusBtn: 50px;
     --borderRadius7Btn: 7px;
@@ -209,7 +206,7 @@ nav {
     overflow: auto;
     pointer-events: none;
     z-index: 9;
-    background-color: var(--color-white-100);
+    background-color: #fff;
     transition: opacity 0.4s ease;
 }
 
@@ -275,6 +272,11 @@ nav {
         padding: unset;
         color: #fff;
     }
+
+    .menu-link:hover {
+        color: var(--skyColor);
+    }
+
 }
 
 .dropdown-toggle {
@@ -296,7 +298,7 @@ nav {
     height: 0;
     z-index: 9;
     overflow: hidden;
-    background-color: var(--color-white-100);
+    background-color: #fff;
     transition: height 0.5s ease;
 }
 
@@ -319,7 +321,7 @@ nav {
 .dropdownn-icon i.bx {
     font-size: 1.5rem;
     line-height: 1.5;
-    color: var(--color-blue-300);
+    color: var(--mainColor);
 }
 
 .text-base {
@@ -351,7 +353,6 @@ nav {
 .dropdownn-block {
     display: flex;
     align-items: flex-start;
-    -moz-column-gap: 1rem;
     column-gap: 1rem;
     padding-top: 1rem;
     padding-inline: 1rem;
@@ -375,15 +376,14 @@ nav {
         height: -moz-max-content;
         height: max-content;
         pointer-events: none;
-        background-color: var(--color-white-100);
-        border-top: 2px solid var(--color-white-200);
-        box-shadow: var(--shadow-large);
+        background-color: #fff;
+        border-top: 2px solid var(--skyColor);
+        box-shadow: 0 0 7px var(--skyColor);
         transition: top 0.4s, opacity 0.3s ease;
     }
 
     .dropdownn-column {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        -moz-column-gap: 2rem;
         column-gap: 2rem;
         max-width: 75rem;
         margin-inline: auto;
@@ -680,10 +680,6 @@ nav {
         background-color: #000;
 
         .our_Partners_Cards {
-            /* display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px 10px; */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
