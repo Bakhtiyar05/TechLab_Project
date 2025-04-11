@@ -582,7 +582,7 @@ nav {
             .our_Services_Card {
                 position: relative;
                 box-shadow: var(--shadow-small);
-                padding: 2rem;
+                padding: 1.2rem;
                 text-align: left;
                 border-bottom: 2px solid #fff;
                 flex-grow: 1;
@@ -591,10 +591,18 @@ nav {
                 background-color: var(--mainColor);
                 color: #fff;
 
+                ul li {
+                    font-size: .9rem;
+                    margin: 15px 0 !important;
+                    border-left: 2px solid var(--skyColor);
+                    line-height: 13px;
+                    padding-left: 10px !important;
+                }
+
                 h3 {
                     font-size: 1.5rem;
                     font-weight: 700;
-                    margin-bottom: 1rem !important;
+                    margin-bottom: 2rem !important;
                 }
 
                 p {
@@ -610,6 +618,11 @@ nav {
             transition: all 0.3s ease-in-out;
             background-color: var(--skyColor);
             color: var(--mainColor);
+
+            ul li {
+                transition: all 0.3s ease-in-out;
+                border-left: 2px solid var(--mainColor);
+            }
         }
 
         .our_Services_Card {
