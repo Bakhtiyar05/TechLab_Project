@@ -127,3 +127,18 @@ main {
         }
     }
 }
+
+
+@media screen and ( max-width: 480px ) {
+
+    .contact_hero_text {
+
+        h1 {
+            font-size: 2rem;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+    }
+}
