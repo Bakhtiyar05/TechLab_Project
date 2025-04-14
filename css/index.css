@@ -260,6 +260,8 @@ nav {
     }
 
     .navbar-menu-block {
+        display: flex;
+        justify-content: flex-end;
         position: initial;
         height: initial;
         opacity: 1;
