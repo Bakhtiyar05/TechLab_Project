@@ -184,7 +184,7 @@ nav {
     }
 }
 
-.email_PhoneNum {
+.email_PhoneNum_Desktop {
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -210,6 +210,10 @@ nav {
             font-size: .9rem;
         }
     }
+}
+
+.email_PhoneNum_Mobile {
+    display: none;
 }
 
 .brand:hover {
@@ -397,7 +401,12 @@ nav {
     padding-inline: 1rem;
 }
 
+.burger_Menu_hr {
+    background-color: var(--mainColor);
+}
+
 @media screen and (min-width: 62rem) {
+
 
     .dropdownn-toggle {
         -moz-column-gap: 0.35rem;
@@ -903,6 +912,41 @@ nav {
 }
 
 @media screen and ( max-width: 768px ) {
+
+    .email_PhoneNum_Desktop {
+        display: none;
+    }
+
+    .email_PhoneNum_Mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px 0;
+        margin-top: 40px;
+    
+        p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.1rem;
+            margin-bottom: 0 !important;
+    
+            a {
+                color: var(--mainColor);
+            }
+    
+            i {
+
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+                color: var(--mainColor);
+            }
+    
+            .fa-phone {
+                font-size: 1.7rem;
+            }
+        }
+    }
 
     .banner {
         min-height: 85vh;
