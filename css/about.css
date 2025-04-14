@@ -65,6 +65,10 @@ main {
             top: 50%;
             left: 0;
         }
+
+        ul li {
+            margin: 7px 0 !important;
+        }
     }
 }
 
