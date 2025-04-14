@@ -902,6 +902,10 @@ nav {
 
 @media screen and ( max-width: 480px ) {
 
+    .brand img {
+        width: 150px;
+    }
+
     .banner {
         min-height: 55vh !important;
         background-color: var(--mainColor);
