@@ -193,11 +193,11 @@ nav {
     p {
         display: flex;
         align-items: center;
-        font-size: .9rem;
+        font-size: .8rem;
         margin-bottom: 0 !important;
 
         a {
-            color: #fff;
+            color: var(--skyColor);
         }
 
         i {
@@ -257,6 +257,7 @@ nav {
     .navbar-Menu {
         display: flex;
         justify-content: space-between;
+        height: 75px;
     }
 
     .navbar-menu-block {
@@ -311,7 +312,8 @@ nav {
     .menu-link {
         padding: unset;
         color: #fff;
-        font-size: .9rem;
+        font-size: .8rem;
+        letter-spacing: 1px;
     }
 
     .menu-link:hover {

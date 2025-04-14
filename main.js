@@ -11,14 +11,14 @@ document.querySelectorAll('.nav-link').forEach(link => {
         setTimeout(() => {
             window.location.href = href;
         }, 500);
-        });
     });
+});
 
     window.addEventListener('load', () => {
         document.body.classList.add('page-enter');
         setTimeout(() => {
         document.body.classList.add('page-enter-active');
-        }, 10);
+        }, 100);
     });
 
 
