@@ -404,7 +404,7 @@ nav {
 }
 
 .burger_Menu_hr {
-    background-color: var(--mainColor);
+    display: none;
 }
 
 @media screen and (min-width: 62rem) {
@@ -921,6 +921,14 @@ nav {
 
     .email_PhoneNum_Desktop {
         display: none;
+    }
+
+    .burger_Menu_hr {
+        display: block;
+    
+        hr {
+            background-color: var(--mainColor);
+        }
     }
 
     .email_PhoneNum_Mobile {
