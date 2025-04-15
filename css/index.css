@@ -831,6 +831,34 @@ nav {
         small {
             color: #fff;
         }
+
+        .email_PhoneNum_Footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start !important;
+            gap: 20px 0;
+        
+            p {
+                display: flex;
+                align-items: center;
+                font-size: .8rem;
+                margin-bottom: 0 !important;
+        
+                a {
+                    color: var(--skyColor);
+                }
+        
+                i {
+                    margin-right: 7px;
+                    font-size: 1rem;
+                    color: #fff;
+                }
+        
+                .fa-phone {
+                    font-size: .9rem;
+                }
+            }
+        }
     }
 
 @media screen and ( min-width: 1300px ) {
