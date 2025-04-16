@@ -188,6 +188,7 @@ nav {
     display: flex;
     align-items: center;
     margin-left: 40px;
+    width: max-content;
     gap: 0 20px;
 
     p {
@@ -630,7 +631,7 @@ nav {
             .our_Services_Card {
                 position: relative;
                 box-shadow: var(--shadow-small);
-                padding: 1.2rem;
+                padding: 1.2rem 1.2rem 1.2rem 1.2rem;
                 text-align: left;
                 border-bottom: 2px solid #fff;
                 flex-grow: 1;
@@ -639,8 +640,15 @@ nav {
                 background-color: var(--mainColor);
                 color: #fff;
 
+                img {
+                    /* position: absolute; */
+                    width: 100px;
+                    top: -60px;
+                    left: 45px;
+                }
+
                 ul li {
-                    font-size: .9rem;
+                    font-size: .8rem;
                     margin: 15px 0 !important;
                     border-left: 2px solid var(--skyColor);
                     line-height: 13px;
