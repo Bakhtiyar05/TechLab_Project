@@ -20,35 +20,151 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="index.html">
-            <!-- <img src="./assets/icons/techlabLogo.png" alt=""> -->
-            <h3>TECHLAB</h3>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="./assets/icons/menu.svg" alt="">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+    <nav class="navbar-Menu">
+        <div class="navbar-menu-inner">
+            <a href="index.html" class="brand">
+                <img src="./assets/logos/techlab_Logo_White.svg" alt="">
+            </a>
+            <div class="email_PhoneNum_Desktop">
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@techlab-ssh.com">info@techlab-ssh.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+994506683334">+994506683334</a></p>
+            </div>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </div>
+        <div class="navbar-menu-block ml-auto mt-2 mt-lg-0" id="menu">
+            <ul class="menu">
+                <!-- <li class="menu-itemm dropdownn">
+                    <span class="dropdownn-toggle menu-link">
+                        Services <i class="bx bx-chevron-down"></i>
+                    </span>
+                    <div class="dropdownn-content">
+                        <div class="dropdownn-column">
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><img src="./assets/icons/database.svg" alt=""></span>
+                                    <span class="text-base font-medium">Cloud & Infrastructure</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Cloud Platforms</a></li>
+                                    <li><a href="#" class="dropdownn-link">Private Cloud</a></li>
+                                    <li><a href="#" class="dropdownn-link">Public Cloud</a></li>
+                                    <li><a href="#" class="dropdownn-link">Traditional Hosting</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><img src="./assets/icons/monitor.svg" alt=""></span>
+                                    <span class="text-base font-medium">IT Consulting & Support</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Manage Applications</a></li>
+                                    <li><a href="#" class="dropdownn-link">Quality Engineering</a></li>
+                                    <li><a href="#" class="dropdownn-link">Software Development</a></li>
+                                    <li><a href="#" class="dropdownn-link">Application Modernization</a></li>
+                                    <li><a href="#" class="dropdownn-link">IT infrastructure</a></li>
+                                    <li><a href="#" class="dropdownn-link">Consulting</a></li>
+                                    <li><a href="#" class="dropdownn-link">Support Services</a></li>
+                                    <li><a href="#" class="dropdownn-link">Web design & Development</a></li>
+                                    <li><a href="#" class="dropdownn-link">Licence Management</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><img src="./assets/icons/security.svg" alt=""></span>
+                                    <span class="text-base font-medium">Security</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Network Security</a></li>
+                                    <li><a href="#" class="dropdownn-link">Endpoint Protection</a></li>
+                                    <li><a href="#" class="dropdownn-link">Data Security & Backup</a></li>
+                                    <li><a href="#" class="dropdownn-link">Cyber Security Audits</a></li>
+                                    <li><a href="#" class="dropdownn-link">Access Control</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdownn-group">
+                                <div class="dropdownn-title">
+                                    <span class="dropdownn-icon"><img src="./assets/icons/iot.svg" alt=""></span>
+                                    <span class="text-base font-medium">IoT</span>
+                                </div>
+                                <ul class="dropdownn-items">
+                                    <li><a href="#" class="dropdownn-link">Home & Office Automation</a></li>
+                                    <li><a href="#" class="dropdownn-link">Smart Device integration</a></li>
+                                    <li><a href="#" class="dropdownn-link">Access Control</a></li>
+                                    <li><a href="#" class="dropdownn-link">Security Camera</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Works</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                <!-- <li class="menu-itemm dropdownn">
+                <span class="dropdownn-toggle menu-link">
+                    Discover <i class="bx bx-chevron-down"></i>
+                </span>
+                <div class="dropdownn-content">
+                    <div class="dropdownn-column">
+                    <div class="dropdownn-group">
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-podcast"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Podcasts</a>
+                            <p class="text-base font-normal">
+                            Hear and enjoy our inspiration podcast together with us.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-video"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Tutorials</a>
+                            <p class="text-base font-normal">
+                            Learn video tutorial with our professional instructors.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdownn-group">
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-book-open"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Help Center</a>
+                            <p class="text-base font-normal">
+                            Discover how to register, install and use our products.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="dropdownn-block">
+                        <span class="dropdownn-icon"><i class="bx bx-bookmark"></i></span>
+                        <div class="dropdownn-inner">
+                            <a href="#" class="text-base font-medium">Community</a>
+                            <p class="text-base font-normal">
+                            Share and connect with other user in our communities.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+                <li class="menu-itemm"><a href="services.html" class="menu-link">Services</a></li>
+                <li class="menu-itemm"><a href="about.html" class="menu-link">About</a></li>
+                <li class="menu-itemm"><a href="contact.html" class="menu-link">Contact</a></li>
+                <!-- <li class="menu-itemm"><a href="" class="menu-link">Support</a></li> -->
+                <div class="container burger_Menu_hr">
+                    <hr />
+                </div>
             </ul>
+
+
+            <div class="email_PhoneNum_Mobile">
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@techlab-ssh.com">info@techlab-ssh.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+994506683334">+994506683334</a></p>
+            </div>
         </div>
     </nav>
 
@@ -74,6 +190,7 @@
                         <div class="our_Services_Cards">
                             <div class="our_Services_Card">
                                 <!-- <img src="./assets/icons/database.svg" alt=""> -->
+                                <i class="fa-solid fa-database"></i>
                                 <h3>Cloud & Infrastructure</h3>
                                 <ul>
                                     <li>Cloud Platforms</li>
@@ -84,6 +201,7 @@
                             </div>
                             <div class="our_Services_Card">
                                 <!-- <img src="./assets/icons/technical-support.png" alt=""> -->
+                                <i class="fa-solid fa-user-gear"></i>
                                 <h3>IT Consulting & Support</h3>
                                 <ul>
                                     <li>Manage Applications</li>
@@ -99,6 +217,7 @@
                             </div>
                             <div class="our_Services_Card">
                                 <!-- <img src="./assets/icons/security.png" alt=""> -->
+                                <i class="fa-solid fa-shield-halved"></i>
                                 <h3>Security</h3>
                                 <ul>
                                     <li>Network Security</li>
@@ -110,6 +229,7 @@
                             </div>
                             <div class="our_Services_Card">
                                 <!-- <img src="./assets/icons/iot (1).png" alt=""> -->
+                                <i class="fa-solid fa-house-signal"></i>
                                 <h3>IoT</h3>
                                 <ul>
                                     <li>Home & Office Automation</li>
@@ -128,17 +248,16 @@
                 <article class="footer_Lists">
                     <article class="footer_Logo">
                         <a href="index.html">
-                            <img src="https://www.3ds.com/fileadmin/depositary/alliances/CRM_SITELOGO/20180700/200000000062569_1Cisco_logo.png" alt="LOGO">
+                            <img src="./assets/logos/techlab_Logo_White.svg" alt="TechLab Logo">
                         </a>
                     </article>
                     <div class="nav_Footer">
                         <article class="footer_List">
                             <h3>About Us</h3>
                             <ul>
-                                <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#services">Services</a></li>
                             </ul>
                         </article>
                         <article  class="footer_List">
@@ -153,13 +272,19 @@
                         <article  class="footer_List">
                             <h3>Resources</h3>
                             <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Case Studies</a></li>
-                                <li><a href="#">Whitepapers</a></li>
-                                <li><a href="#">E-books</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Works</a></li>
                             </ul>
+                            <div class="email_PhoneNum_Footer">
+                                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@techlab-ssh.com">info@techlab-ssh.com</a></p>
+                                <p><i class="fa-solid fa-phone"></i><a href="tel:+994506683334">+994506683334</a></p>
+                            </div>
                         </article>
                     </div>
+                </article>
+                <hr />
+                <article>
+                    <small>&copy; 2025 TechLab. All rights reserved.</small>
                 </article>
             </div>
         </footer>
