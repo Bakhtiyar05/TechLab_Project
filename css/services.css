@@ -147,23 +147,23 @@ main {
 
     .our_Services_Card:hover {
         transition: all 0.3s ease-in-out;
-        background-color: var(--skyColor);
-        color: var(--mainColor);
+        /* background-color: var(--skyColor); */
+        /* color: var(--mainColor); */
 
         i {
             transition: all 0.3s ease-in-out;
-            color: var(--mainColor);
+            /* color: var(--mainColor); */
         }
 
         h3 {
             transition: all 0.3s ease-in-out;
-            color: var(--mainColor);
+            /* color: var(--mainColor); */
         }
 
         ul li {
             transition: all 0.3s ease-in-out;
-            border-left: 2px solid var(--mainColor);
-            color: var(--mainColor);
+            /* border-left: 2px solid var(--mainColor); */
+            /* color: var(--mainColor); */
         }
     }
 

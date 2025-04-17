@@ -101,7 +101,8 @@ p {
 
 :root {
     --mainColor: #05112b;
-    --skyColor: #43efff;
+    /* --skyColor: #43efff; */
+    --skyColor: rgb(195, 195, 195);
     --mainFontPoppins: 'EuclidCircular', sans-serif;
     --borderRadiusBtn: 50px;
     --borderRadius7Btn: 7px;
@@ -196,6 +197,7 @@ nav {
         align-items: center;
         font-size: .8rem;
         margin-bottom: 0 !important;
+        letter-spacing: .5px;
 
         a {
             color: var(--skyColor);
@@ -211,6 +213,7 @@ nav {
             font-size: .9rem;
         }
     }
+
 }
 
 .email_PhoneNum_Mobile {
@@ -546,6 +549,10 @@ nav {
 /* Banner */
 
 .banner {
+    background-image: url('../assets/bannerPhoto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
     background-color: var(--mainColor);
     padding-top: 40rem !important;
@@ -591,7 +598,7 @@ nav {
             }
         }
 
-        .banner_Image {
+        /* .banner_Image {
             position: absolute;
             top: 50%;
             right: 0;
@@ -602,7 +609,7 @@ nav {
                 height: 100%;
                 object-fit: cover;
             }
-        }
+        } */
     }
 
 
@@ -636,7 +643,7 @@ nav {
                 border-bottom: 2px solid #fff;
                 flex-grow: 1;
                 flex-basis: 200px;
-                cursor: pointer;
+                cursor: default;
                 background-color: var(--mainColor);
                 color: #fff;
 
@@ -652,6 +659,7 @@ nav {
                     margin: 15px 0 !important;
                     border-left: 2px solid var(--skyColor);
                     line-height: 13px;
+                    color: var(--skyColor);
                     padding-left: 10px !important;
                 }
 
@@ -672,12 +680,12 @@ nav {
         .our_Services_Card:hover {
             box-shadow: var(--shadow-large);
             transition: all 0.3s ease-in-out;
-            background-color: var(--skyColor);
-            color: var(--mainColor);
+            /* background-color: var(--skyColor); */
+            /* color: var(--mainColor); */
 
             ul li {
                 transition: all 0.3s ease-in-out;
-                border-left: 2px solid var(--mainColor);
+                /* border-left: 2px solid var(--mainColor); */
             }
         }
 
@@ -708,14 +716,14 @@ nav {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 2rem !important;
-            color: var(--skyColor);
+            color: #fff;
         }
 
         p {
             font-size: 1rem;
             font-weight: 400;
             margin-bottom: 0 !important;
-            color: rgb(175, 175, 175)
+            color: var(--skyColor);
         }
 
         .cybersecurity_Image img {
@@ -814,7 +822,7 @@ nav {
                         font-size: 1rem;
                         font-weight: 400;
                         margin-bottom: 0 !important;
-                        color: #fff;
+                        color: var(--skyColor);
                         padding-bottom: 5px;
                     }
 
@@ -849,7 +857,6 @@ nav {
             p {
                 display: flex;
                 align-items: center;
-                font-size: .8rem;
                 margin-bottom: 0 !important;
         
                 a {
@@ -864,6 +871,17 @@ nav {
         
                 .fa-phone {
                     font-size: .9rem;
+                }
+            }
+
+            .whatsapp-animation {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+                color: var(--skyColor);
+        
+                i {
+                    color: rgb(52, 241, 52);
                 }
             }
         }
