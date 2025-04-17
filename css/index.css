@@ -168,7 +168,7 @@ html {
 
 nav {
     background-color: var(--mainColor) !important;
-    padding: 0 20px !important;
+    padding: 0 50px !important;
 }
 
 .brand {
@@ -819,7 +819,7 @@ nav {
                     gap: 10px;
                 
                     li a {
-                        font-size: 1rem;
+                        font-size: .9rem;
                         font-weight: 400;
                         margin-bottom: 0 !important;
                         color: var(--skyColor);
@@ -845,7 +845,7 @@ nav {
         }
 
         small {
-            color: #fff;
+            color: var(--skyColor);
         }
 
         .email_PhoneNum_Footer {
@@ -861,6 +861,7 @@ nav {
         
                 a {
                     color: var(--skyColor);
+                    font-size: .9rem;
                 }
         
                 i {
@@ -879,6 +880,7 @@ nav {
                 align-items: center;
                 gap: 0 10px;
                 color: var(--skyColor);
+                font-size: .9rem;
         
                 i {
                     color: rgb(52, 241, 52);

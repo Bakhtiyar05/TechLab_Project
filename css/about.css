@@ -44,7 +44,7 @@ main {
     border-bottom: 1px solid gray;
 
     .about_Page_Card {
-        color: #fff;
+        color: var(--skyColor);
 
         h2 {
             position: relative;
