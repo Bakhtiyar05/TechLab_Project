@@ -581,7 +581,6 @@ nav {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    aspect-ratio: 16 / 9;
     min-height: 100vh;
     background-color: var(--mainColor);
     padding-top: 40rem !important;
@@ -1038,6 +1037,7 @@ nav {
     
             a {
                 color: var(--mainColor);
+                font-weight: 600;
             }
     
             i {
