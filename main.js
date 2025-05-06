@@ -92,3 +92,25 @@ window.addEventListener("resize", () => {
         }
     }
 });
+
+
+/* Emailjs */
+
+(function() {
+    emailjs.init({
+        publicKey: "qVAtmAEzb12KDD-fU"
+    });
+})();
+
+window.onload = function() {
+    document.getElementById("form_Consultation").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_spnz76a", 'template_bnr7xyj', this)
+            .then(() => {
+                console.log('SUCCESS!');
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
+        });
+}

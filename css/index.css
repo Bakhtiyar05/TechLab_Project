@@ -323,19 +323,6 @@ nav {
     text-transform: uppercase;
 }
 
-/* .freeConsulting a {
-    background-color: var(--white);
-    color: var(--mainColor);
-
-    a {
-        color: var(--mainColor);
-    }
-}
-
-.freeConsulting:hover a {
-    color: var(--mainColor);
-} */
-
 @media screen and (min-width: 62rem) {
 
     .menu {

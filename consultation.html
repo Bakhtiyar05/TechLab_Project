@@ -175,11 +175,11 @@
 
     <main>
 
-        <section class="contact">
-            <div class="contact_hero">
-                <div class="contact_hero_Image">
+        <section class="consulting">
+            <div class="consulting_hero">
+                <div class="consulting_hero_Image">
                     <img src="https://images.pexels.com/photos/8866726/pexels-photo-8866726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                    <div class="contact_hero_text">
+                    <div class="consulting_hero_text">
                         <div class="container">
                             <h1>Free Consultation</h1>
                             <p>We contribute businesses by combating digital threats</p>
@@ -190,9 +190,20 @@
         </section>
 
 
-        <section class="contact_Page_Cards">
+        <section class="consulting_Page_Cards">
             <div class="container">
-                
+                <form action="" id="form_Consultation">
+                    <label for="">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <label for="">Phone</label>
+                    <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+                    <label for="">Message</label>
+                    <textarea name="" id="" rows="5" placeholder="Message"></textarea>
+
+                    <button type="submit" value="Send">Send message</button>
+                </form>
             </div>
         </section>
 
@@ -254,8 +265,8 @@
 
 
 
-
-
+    <!-- Emaijs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="main.js"></script>
 
