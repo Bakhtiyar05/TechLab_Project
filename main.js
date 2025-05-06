@@ -112,5 +112,5 @@ window.onload = function() {
             }, (error) => {
                 console.log('FAILED...', error);
             });
-        });
+    });
 }
