@@ -96,21 +96,58 @@ window.addEventListener("resize", () => {
 
 /* Emailjs */
 
-(function() {
+(function () {
     emailjs.init({
         publicKey: "qVAtmAEzb12KDD-fU"
     });
 })();
 
-window.onload = function() {
-    document.getElementById("form_Consultation").addEventListener("submit", function(event) {
+window.onload = function () {
+    document.getElementById("form_Consultation").addEventListener("submit", function (event) {
         event.preventDefault();
 
-        emailjs.sendForm("service_spnz76a", 'template_bnr7xyj', this)
-            .then(() => {
-                console.log('SUCCESS!');
-            }, (error) => {
-                console.log('FAILED...', error);
-            });
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !phone || !message) {
+            alert("Fields cannot be empty!");
+            return;
+        }
+        
+        emailjs.sendForm("service_spnz76a", "template_bnr7xyj", this)
+        .then(() => {
+            alert("Message sent successfully!");
+            document.getElementById("form_Consultation").reset();
+        }, (error) => {
+            console.log('FAILED...', error);
+            alert("An error occurred, please try again.");
+        });
     });
-}
+};
+
+
+/* RegEx */
+
+/* const formConsultation = document.getElementById("form_Consultation");
+
+formConsultation.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !phone || !message) {
+        alert("Please fill in all fields.");
+    }
+    else {
+        alert("Form submitted successfully!");
+        formConsultation.reset();
+    }
+
+}) */
+
+/* _____ */

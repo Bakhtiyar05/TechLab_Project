@@ -56,7 +56,6 @@ main {
         margin: 0px 0 30px 0;
         max-width: 500px;
         padding: 7px;
-        border-radius: 5px;
         border: none;
         background-color: var(--skyColor);
         color: var(--mainColor);
@@ -69,13 +68,13 @@ main {
     }
 
     button {
-        background-color: var(--skyColor);
+        background-color: transparent;
         color: var(--mainColor);
         font-size: 1rem;
         padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
+        border: 1px solid var(--skyColor);
         max-width: max-content;
+        color: var(--skyColor);
         cursor: pointer;
         outline: none;
     }
