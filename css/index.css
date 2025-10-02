@@ -356,9 +356,9 @@ nav {
 }
 
 .freeConsulting a {
-    background-color: #fff !important;
-    color: var(--mainColor);
-    padding: 10px 20px;
+    /* background-color: #fff !important; */
+    color: #fff;
+    /* padding: 10px 20px; */
 }
 
 .dropdown-toggle {
