@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Center</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+}
+
+.download-screen{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.file-item{
+    background:#1f2937;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.file-item span{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.file-item small{
+    opacity:0.7;
+    font-size:13px;
+}
+
+.download-btn{
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.download-btn:hover{
+    background:#15803d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="download-screen">
+    <div class="container">
+
+        <h2>Fayllar</h2>
+
+        <div id="fileList"></div>
+
+    </div>
+</div>
+
+<script>
+
+    const files = [
+        {
+            name: "GP Agent",
+            path: "files/GlobalProtect64-6.2.8-c263 (1).msi"
+        },
+
+    ];
+
+    async function getFileSize(url){
+        try{
+            const res = await fetch(url, { method: "HEAD" });
+            const size = res.headers.get("content-length");
+
+            if(!size) return "Unknown";
+
+            const mb = (size / (1024 * 1024)).toFixed(2);
+            return mb + " MB";
+        }catch(e){
+            return "Unknown";
+        }
+    }
+
+    const fileList = document.getElementById("fileList");
+
+    async function renderFiles(){
+
+        for(const file of files){
+
+            const size = await getFileSize(file.path);
+
+            const div = document.createElement("div");
+            div.className = "file-item";
+
+            div.innerHTML = `
+                <span>
+                    ${file.name}
+                    <small>(${size})</small>
+                </span>
+
+                <a href="${file.path}" download class="download-btn">
+                    Download
+                </a>
+            `;
+
+            fileList.appendChild(div);
+        }
+    }
+
+    renderFiles();
+</script>
+
+</body>
+</html>
